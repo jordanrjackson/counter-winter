@@ -1,15 +1,13 @@
 import React from 'react';
+import Counter from './Counter'
 
 class App extends React.Component{
-  state= {value: 0}
-
-  render(){
+  render() {
     return (
       <div className="App">
-      <h1 className= "App-title">Counter</h1>
-      <p>{this.state.value}</p>
-      <button>-</button>
-      <button>+</button>
+        <h1 className="App-title">Counter Example</h1>
+        <Counter name="Red" />
+        <Counter name="Blue" />
       </div>
     )
   }
